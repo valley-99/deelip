@@ -1,487 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080b12">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b12">
 
-<title>Dilpreet Brar | Personal Community</title>
-<meta name="description" content="Explore educational information, useful resources and community updates from Dilpreet Brar.">
+    <title>Dilpreet Brar | Personal Community</title>
+    <meta name="description"
+        content="Explore educational information, useful resources and community updates from Dilpreet Brar.">
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #050a13;
-  color: #ffffff;
-  line-height: 1.6;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #050a13;
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
-.page {
-  min-height: 100vh;
-  padding: 35px 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:
-    radial-gradient(ellipse at top, #1b304e 0%, transparent 60%),
-    linear-gradient(180deg, #080f1c, #03070d);
-}
+        .page {
+            min-height: 100vh;
+            padding: 35px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:
+                radial-gradient(ellipse at top, #1b304e 0%, transparent 60%),
+                linear-gradient(180deg, #080f1c, #03070d);
+        }
 
-.card {
-  width: 100%;
-  max-width: 700px;
-  overflow: hidden;
-  text-align: center;
-  border: 1px solid rgba(245,199,106,.28);
-  border-radius: 25px;
-  background: linear-gradient(145deg, #111e31, #080e18 70%);
-  box-shadow: 0 20px 70px rgba(0,0,0,.45);
-}
+        .card {
+            width: 100%;
+            max-width: 700px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid rgba(245, 199, 106, .28);
+            border-radius: 25px;
+            background: linear-gradient(145deg, #111e31, #080e18 70%);
+            box-shadow: 0 20px 70px rgba(0, 0, 0, .45);
+        }
 
-.cover {
-  position: relative;
-  padding: 38px 20px 70px;
-  background:
-    radial-gradient(ellipse at center, rgba(245,183,65,.16), transparent 65%),
-    linear-gradient(135deg, #162842, #08101d);
-}
+        .cover {
+            position: relative;
+            padding: 38px 20px 70px;
+            background:
+                radial-gradient(ellipse at center, rgba(245, 183, 65, .16), transparent 65%),
+                linear-gradient(135deg, #162842, #08101d);
+        }
 
-.cover-label {
-  color: #f5c76a;
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
+        .cover-label {
+            color: #f5c76a;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
 
-.content {
-  padding: 0 28px 30px;
-}
+        .content {
+            padding: 0 28px 30px;
+        }
 
-.logo {
-  width: 132px;
-  height: 132px;
-  margin: -68px auto 20px;
-  position: relative;
-  z-index: 2;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #f5c76a;
-  background: #101b2b;
-  box-shadow: 0 0 35px rgba(245,199,106,.25);
-}
+        .logo {
+            width: 132px;
+            height: 132px;
+            margin: -68px auto 20px;
+            position: relative;
+            z-index: 2;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #f5c76a;
+            background: #101b2b;
+            box-shadow: 0 0 35px rgba(245, 199, 106, .25);
+        }
 
-.logo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  border-radius: 50%;
-}
+        .logo img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
-.tag {
-  display: inline-block;
-  padding: 6px 14px;
-  margin-bottom: 13px;
-  color: #f5c76a;
-  border: 1px solid rgba(245,199,106,.35);
-  border-radius: 30px;
-  background: rgba(245,199,106,.07);
-  font-size: 10px;
-  letter-spacing: 1.5px;
-}
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            margin-bottom: 13px;
+            color: #f5c76a;
+            border: 1px solid rgba(245, 199, 106, .35);
+            border-radius: 30px;
+            background: rgba(245, 199, 106, .07);
+            font-size: 10px;
+            letter-spacing: 1.5px;
+        }
 
-h1 {
-  font-size: clamp(28px, 6vw, 43px);
-  line-height: 1.2;
-  margin-bottom: 10px;
-  overflow-wrap: anywhere;
-}
+        h1 {
+            font-size: clamp(28px, 6vw, 43px);
+            line-height: 1.2;
+            margin-bottom: 10px;
+            overflow-wrap: anywhere;
+        }
 
-h1 span { color: #f5c76a; }
+        h1 span {
+            color: #f5c76a;
+        }
 
-.subtitle {
-  color: #f5c76a;
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-bottom: 22px;
-}
+        .subtitle {
+            color: #f5c76a;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
 
-.description {
-  max-width: 510px;
-  margin: 0 auto;
-  color: #c0cada;
-  font-size: 15px;
-  line-height: 1.9;
-}
+        .description {
+            max-width: 510px;
+            margin: 0 auto;
+            color: #c0cada;
+            font-size: 15px;
+            line-height: 1.9;
+        }
 
-.divider {
-  height: 1px;
-  background: rgba(255,255,255,.1);
-  margin: 27px 0;
-}
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, .1);
+            margin: 27px 0;
+        }
 
-.section-title {
-  font-size: 21px;
-  margin-bottom: 17px;
-}
+        .section-title {
+            font-size: 21px;
+            margin-bottom: 17px;
+        }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 13px;
-  text-align: left;
-}
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 13px;
+            text-align: left;
+        }
 
-.feature {
-  min-width: 0;
-  padding: 18px;
-  border-radius: 16px;
-  border: 1px solid rgba(70,133,194,.19);
-  background: rgba(8,22,38,.75);
-  transition: transform .2s ease, border-color .2s ease;
-}
+        .feature {
+            min-width: 0;
+            padding: 18px;
+            border-radius: 16px;
+            border: 1px solid rgba(70, 133, 194, .19);
+            background: rgba(8, 22, 38, .75);
+            transition: transform .2s ease, border-color .2s ease;
+        }
 
-.feature:hover {
-  transform: translateY(-3px);
-  border-color: rgba(245,199,106,.5);
-}
+        .feature:hover {
+            transform: translateY(-3px);
+            border-color: rgba(245, 199, 106, .5);
+        }
 
-.feature-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  margin-bottom: 12px;
-  border: 2px solid #f5c76a;
-  border-radius: 50%;
-  color: #f5c76a;
-  font-size: 21px;
-}
+        .feature-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 12px;
+            border: 2px solid #f5c76a;
+            border-radius: 50%;
+            color: #f5c76a;
+            font-size: 21px;
+        }
 
-.feature h3 {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
+        .feature h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
 
-.feature p {
-  color: #aebbd0;
-  font-size: 13px;
-  line-height: 1.7;
-}
+        .feature p {
+            color: #aebbd0;
+            font-size: 13px;
+            line-height: 1.7;
+        }
 
-.quote {
-  margin: 30px 0 8px;
-  color: #f5c76a;
-  font-size: clamp(20px, 4vw, 28px);
-  font-style: italic;
-  font-family: Georgia, serif;
-}
+        .quote {
+            margin: 30px 0 8px;
+            color: #f5c76a;
+            font-size: clamp(20px, 4vw, 28px);
+            font-style: italic;
+            font-family: Georgia, serif;
+        }
 
-.stay-connected {
-  margin: 25px 0 0;
-  color: #c5d0df;
-  font-size: 11px;
-  letter-spacing: 3px;
-  font-weight: bold;
-}
+        .stay-connected {
+            margin: 25px 0 0;
+            color: #c5d0df;
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
 
-.note {
-  margin-top: 20px;
-  color: #8795a9;
-  font-size: 11px;
-  line-height: 1.8;
-}
+        .note {
+            margin-top: 20px;
+            color: #8795a9;
+            font-size: 11px;
+            line-height: 1.8;
+        }
 
-.footer {
-  padding: 17px 12px;
-  border-top: 1px solid rgba(255,255,255,.08);
-  color: #8997aa;
-  font-size: 11px;
-}
+        .footer {
+            padding: 17px 12px;
+            border-top: 1px solid rgba(255, 255, 255, .08);
+            color: #8997aa;
+            font-size: 11px;
+        }
 
-/* Telegram popup */
-.telegram-popup {
-  position: fixed;
-  left: 50%;
-  bottom: 18px;
-  width: calc(100% - 24px);
-  max-width: 510px;
-  padding: 24px 20px 20px;
-  z-index: 9999;
+        /* Telegram popup */
+        .telegram-popup {
+            position: fixed;
+            left: 50%;
+            bottom: 18px;
+            width: calc(100% - 24px);
+            max-width: 510px;
+            padding: 24px 20px 20px;
+            z-index: 9999;
 
-  background: linear-gradient(145deg, #17263b, #080e18);
-  border: 1px solid rgba(245,199,106,.8);
-  border-radius: 20px;
-  box-shadow: 0 15px 55px rgba(0,0,0,.65),
-              0 0 25px rgba(245,199,106,.12);
+            background: linear-gradient(145deg, #17263b, #080e18);
+            border: 1px solid rgba(245, 199, 106, .8);
+            border-radius: 20px;
+            box-shadow: 0 15px 55px rgba(0, 0, 0, .65),
+                0 0 25px rgba(245, 199, 106, .12);
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translate(-50%, 35px);
-  transition: opacity .45s ease,
-              transform .45s ease,
-              visibility .45s ease;
-}
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translate(-50%, 35px);
+            transition: opacity .45s ease,
+                transform .45s ease,
+                visibility .45s ease;
+        }
 
-.telegram-popup.show {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translate(-50%, 0);
-}
+        .telegram-popup.show {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translate(-50%, 0);
+        }
 
-.popup-close {
-  position: absolute;
-  top: 7px;
-  right: 12px;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #536176;
-  border-radius: 50%;
-  background: transparent;
-  color: #fff;
-  font-size: 23px;
-  line-height: 1;
-  cursor: pointer;
-}
+        .popup-close {
+            position: absolute;
+            top: 7px;
+            right: 12px;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #536176;
+            border-radius: 50%;
+            background: transparent;
+            color: #fff;
+            font-size: 23px;
+            line-height: 1;
+            cursor: pointer;
+        }
 
-.popup-label {
-  color: #f5c76a;
-  font-size: 10px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
+        .popup-label {
+            color: #f5c76a;
+            font-size: 10px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-.popup-title {
-  font-size: 23px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  padding-right: 20px;
-}
+        .popup-title {
+            font-size: 23px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            padding-right: 20px;
+        }
 
-.popup-text {
-  color: #bbc6d6;
-  font-size: 13px;
-  line-height: 1.7;
-  margin-bottom: 17px;
-}
+        .popup-text {
+            color: #bbc6d6;
+            font-size: 13px;
+            line-height: 1.7;
+            margin-bottom: 17px;
+        }
 
-.join-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  min-height: 51px;
-  padding: 13px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #f8d98e, #e9ad43);
-  color: #111827;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  transition: transform .2s ease;
-}
+        .join-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            min-height: 51px;
+            padding: 13px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #f8d98e, #e9ad43);
+            color: #111827;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            transition: transform .2s ease;
+        }
 
-.join-btn:hover { transform: translateY(-2px); }
+        .join-btn:hover {
+            transform: translateY(-2px);
+        }
 
-@media (max-width: 480px) {
-  .page { padding: 15px 10px; }
-  .card { border-radius: 20px; }
-  .cover { padding-top: 30px; }
-  .content { padding-left: 16px; padding-right: 16px; }
-  .logo { width: 112px; height: 112px; margin-top: -59px; }
-  .features { gap: 9px; }
-  .feature { padding: 13px 11px; }
-  .feature h3 { font-size: 13px; }
-  .feature p { font-size: 12px; }
-  .telegram-popup { bottom: 10px; padding: 24px 15px 15px; }
-  .popup-title { font-size: 20px; }
-}
+        @media (max-width: 480px) {
+            .page {
+                padding: 15px 10px;
+            }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
-    transition: none !important;
-  }
-}
-</style>
+            .card {
+                border-radius: 20px;
+            }
+
+            .cover {
+                padding-top: 30px;
+            }
+
+            .content {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .logo {
+                width: 112px;
+                height: 112px;
+                margin-top: -59px;
+            }
+
+            .features {
+                gap: 9px;
+            }
+
+            .feature {
+                padding: 13px 11px;
+            }
+
+            .feature h3 {
+                font-size: 13px;
+            }
+
+            .feature p {
+                font-size: 12px;
+            }
+
+            .telegram-popup {
+                bottom: 10px;
+                padding: 24px 15px 15px;
+            }
+
+            .popup-title {
+                font-size: 20px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<main class="page">
-  <section class="card">
+    <main class="page">
+        <section class="card">
 
-    <div class="cover">
-      <div class="cover-label">PERSONAL PROFILE</div>
-    </div>
+            <div class="cover">
+                <div class="cover-label">PERSONAL PROFILE</div>
+            </div>
 
-    <div class="content">
+            <div class="content">
 
-      <!-- YOUR LOGO -->
-      <div class="logo">
-        <img
-          src="https://cdn5.telesco.pe/file/Jijx7mhCbaMk8fagkTHRo5bq5BEnkTOOr732rKUc9D9TTPOAM7_oF3i8rEK0ckB1lVyDObHU6sWElLF2jqBW-BOlwsy2ObDOARKkwuNUSumP8i3l_ffg5gf1v2Vzeq2MlBgYx1DbF3gfSEzi1fQu27pBb0HLJui6ef5R1zQlsxC8cdcbR2VmzDUpbDVukPIlExAbPZDt6cnGH736SaGKCdST6k6ogHaMg1bpCTJImtQT8Az4jhv6ZK7KK8I_cxEJaSn0g87ajIVus9M_cTTWgm275fCUivOYTg4XrLHuj53h3Bu7NeozNAjgOUHus2_ISoulUgbIMV6iB-JAjGJ1SQ.jpg"
-          alt="Dilpreet Brar Logo"
-          loading="eager"
-          onerror="this.style.display='none';"
-        >
-      </div>
+                <!-- YOUR LOGO -->
+                <div class="logo">
+                    <img src="dilpreet.jpg" alt="Dilpreet Brar Logo" loading="eager"
+                        onerror="this.style.display='none';">
+                </div>
 
-      <div class="tag">✦ PERSONAL COMMUNITY</div>
+                <div class="tag">✦ PERSONAL COMMUNITY</div>
 
-      <h1>Dilpreet <span>Brar</span></h1>
+                <h1>Dilpreet <span>Brar</span></h1>
 
-      <p class="subtitle">PERSONAL PROFILE &amp; COMMUNITY</p>
+                <p class="subtitle">PERSONAL PROFILE &amp; COMMUNITY</p>
 
-      <p class="description">
-        Welcome to my personal page! Explore useful information,
-        educational resources and community updates.
-      </p>
+                <p class="description">
+                    Welcome to my personal page! Explore useful information,
+                    educational resources and community updates.
+                </p>
 
-      <div class="divider"></div>
+                <div class="divider"></div>
 
-      <h2 class="section-title">What You Can Explore</h2>
+                <h2 class="section-title">What You Can Explore</h2>
 
-      <div class="features">
+                <div class="features">
 
-        <div class="feature">
-          <div class="feature-icon">▤</div>
-          <h3>Learning Resources</h3>
-          <p>Useful educational content, tips and insights.</p>
-        </div>
+                    <div class="feature">
+                        <div class="feature-icon">▤</div>
+                        <h3>Learning Resources</h3>
+                        <p>Useful educational content, tips and insights.</p>
+                    </div>
 
-        <div class="feature">
-          <div class="feature-icon">♧</div>
-          <h3>Community Updates</h3>
-          <p>Stay informed with the latest news and updates.</p>
-        </div>
+                    <div class="feature">
+                        <div class="feature-icon">♧</div>
+                        <h3>Community Updates</h3>
+                        <p>Stay informed with the latest news and updates.</p>
+                    </div>
 
-        <div class="feature">
-          <div class="feature-icon">✧</div>
-          <h3>Useful Information</h3>
-          <p>Practical guides, resources and helpful links.</p>
-        </div>
+                    <div class="feature">
+                        <div class="feature-icon">✧</div>
+                        <h3>Useful Information</h3>
+                        <p>Practical guides, resources and helpful links.</p>
+                    </div>
 
-        <div class="feature">
-          <div class="feature-icon">↗</div>
-          <h3>Personal Growth</h3>
-          <p>Learn, improve and build a better tomorrow.</p>
-        </div>
+                    <div class="feature">
+                        <div class="feature-icon">↗</div>
+                        <h3>Personal Growth</h3>
+                        <p>Learn, improve and build a better tomorrow.</p>
+                    </div>
 
-      </div>
+                </div>
 
-      <p class="quote">“Good Things Take Time”</p>
+                <p class="quote">“Good Things Take Time”</p>
 
-      <div class="divider"></div>
+                <div class="divider"></div>
 
-      <div id="about">
-        <h2 class="section-title">About Dilpreet Brar</h2>
-        <p class="description">
-          This page is a place to connect with my community
-          and explore educational content, useful information
-          and shared learning resources.
+                <div id="about">
+                    <h2 class="section-title">About Dilpreet Brar</h2>
+                    <p class="description">
+                        This page is a place to connect with my community
+                        and explore educational content, useful information
+                        and shared learning resources.
+                    </p>
+                </div>
+
+                <p class="stay-connected">— STAY CONNECTED —</p>
+
+                <p class="note">
+                    Content is provided for general informational and
+                    educational purposes. Please evaluate information independently.
+                </p>
+
+            </div>
+
+            <div class="footer">
+                &copy; <span id="year"></span> Dilpreet Brar. All rights reserved.
+            </div>
+
+        </section>
+    </main>
+
+    <!-- TELEGRAM POPUP -->
+    <div id="telegramPopup" class="telegram-popup" role="dialog" aria-label="Join Telegram Community"
+        aria-hidden="true">
+
+        <button type="button" class="popup-close" id="closePopup" aria-label="Close popup">
+            &times;
+        </button>
+
+        <div class="popup-label">WELCOME TO MY COMMUNITY</div>
+
+        <p class="popup-title">Get Exclusive Updates</p>
+
+        <p class="popup-text">
+            Join my Telegram community for educational content,
+            useful resources and community updates.
         </p>
-      </div>
 
-      <p class="stay-connected">— STAY CONNECTED —</p>
-
-      <p class="note">
-        Content is provided for general informational and
-        educational purposes. Please evaluate information independently.
-      </p>
+        <a href="https://t.me/+QnAN5T2OcXYxMGY1" class="join-btn" target="_blank" rel="noopener noreferrer">
+            ✈ Join Now on Telegram&nbsp; →
+        </a>
 
     </div>
 
-    <div class="footer">
-      &copy; <span id="year"></span> Dilpreet Brar. All rights reserved.
-    </div>
+    <script>
+        (function () {
+            function initPage() {
+                var year = document.getElementById("year");
+                var popup = document.getElementById("telegramPopup");
+                var closeButton = document.getElementById("closePopup");
 
-  </section>
-</main>
+                if (year) {
+                    year.textContent = new Date().getFullYear();
+                }
 
-<!-- TELEGRAM POPUP -->
-<div
-  id="telegramPopup"
-  class="telegram-popup"
-  role="dialog"
-  aria-label="Join Telegram Community"
-  aria-hidden="true">
+                if (!popup || !closeButton) return;
 
-  <button
-    type="button"
-    class="popup-close"
-    id="closePopup"
-    aria-label="Close popup">
-    &times;
-  </button>
+                // Show the join panel after 5 seconds.
+                var popupTimer = setTimeout(function () {
+                    popup.classList.add("show");
+                    popup.setAttribute("aria-hidden", "false");
+                }, 5000);
 
-  <div class="popup-label">WELCOME TO MY COMMUNITY</div>
+                closeButton.addEventListener("click", function () {
+                    clearTimeout(popupTimer);
+                    popup.classList.remove("show");
+                    popup.setAttribute("aria-hidden", "true");
+                });
+            }
 
-  <p class="popup-title">Get Exclusive Updates</p>
-
-  <p class="popup-text">
-    Join my Telegram community for educational content,
-    useful resources and community updates.
-  </p>
-
-  <a
-    href="https://t.me/+QnAN5T2OcXYxMGY1"
-    class="join-btn"
-    target="_blank"
-    rel="noopener noreferrer">
-    ✈ Join Now on Telegram&nbsp; →
-  </a>
-
-</div>
-
-<script>
-(function () {
-  function initPage() {
-    var year = document.getElementById("year");
-    var popup = document.getElementById("telegramPopup");
-    var closeButton = document.getElementById("closePopup");
-
-    if (year) {
-      year.textContent = new Date().getFullYear();
-    }
-
-    if (!popup || !closeButton) return;
-
-    // Show the join panel after 5 seconds.
-    var popupTimer = setTimeout(function () {
-      popup.classList.add("show");
-      popup.setAttribute("aria-hidden", "false");
-    }, 5000);
-
-    closeButton.addEventListener("click", function () {
-      clearTimeout(popupTimer);
-      popup.classList.remove("show");
-      popup.setAttribute("aria-hidden", "true");
-    });
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initPage);
-  } else {
-    initPage();
-  }
-})();
-</script>
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", initPage);
+            } else {
+                initPage();
+            }
+        })();
+    </script>
 
 </body>
+
 </html>
